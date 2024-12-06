@@ -129,6 +129,7 @@ header {
   height: 320px;
   background-color: rgb(54, 54, 54);
   margin-top: 140px;
+  position: relative;
 }
 .content-about {
   padding: 10px 38px;
@@ -150,4 +151,56 @@ header {
   background-color: rgb(49, 255, 7);
   width: 46px;
   height: 2px;
+}
+.para-about {
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.695);
+  line-height: 21px;
+  margin: 25px 0px;
+}
+.link-about {
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid rgba(0, 255, 0, 0.5);
+  color: rgb(49, 255, 7);
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 8px 22px;
+  position: relative;
+  z-index: 22;
+  transition: 0.4s ease-in;
+}
+.link-about:hover {
+  color: white;
+}
+.span-about {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: rgb(49, 255, 7);
+  width: 0%;
+  height: 100%;
+  z-index: -1;
+  transition: 0.4s ease-in;
+}
+.link-about:hover .span-about {
+  width: 100%;
+  color: white;
+}
+.fa-arrow-right {
+  color: rgb(49, 255, 7);
+  font-size: 11px;
+  margin-left: 5px;
+}
+.fa-arrow-right:hover {
+  color: white;
+}
+.img-about {
+  height: 420px;
+  width: 50%;
+  position: absolute;
+  top: -36px;
+  right: 30px;
 }
